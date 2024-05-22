@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur Code </title>
+</head>
+<body style="background-color: #252525; color: #FFF;">
+    
+</body>
+
+
+<script>
+    // create new element  
+    const div = document.createElement('div')
+    console.log(div);
+
+    // Set class name
+    div.className = 'main'
+
+    // Set a random ID
+    div.id = Math.round(Math.random() * 10 + 1 )
+    //div.id = Math.floor(Math.random() * 10 + 1 ) // another way
+
+    // Set a title attribute
+    div.setAttribute('title', 'title generated')
+
+    // Set styles
+    div.style.backgroundColor = "green"
+    div.style.padding = "15px"
+
+    // Set inner text
+    div.innerText = 'chai aur code'  // Correct way to set inner text
+    // div.innerText('chai aur code')  //so its give error cause innerText is being used as a function, but it is actually a property of the DOM element.
+    // const addText = document.createTextNode("Chai our Code") //onother way to set inner text
+    // div.appendChild(addText)
+
+    //Optionally, append the div to the body or another element to make it visible in the DOM
+    // document.body.appendChild(div) 
+</script>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lets learn Lexical scoping and Closure</h1>
+    <button id="red">Click Button</button>
+    <button  id="black">Click Button</button>
+
+    <script>
+
+        // function outter()  {
+        //     let name = 'Rahamat'
+        //    function inner() {
+        //     console.log(name); // here we can access the name variable -> this is called lexical scope.
+        //    }
+        //    inner()
+        // }
+        // outter();
+        // console.log(name); // we can't access 
+
+
+// a closure gives you access to an outer function's scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
+
+// closure 
+//     function makeFunc() {
+//         const name = "Mozilla";
+
+//         function displayName() {
+//         console.log(name);
+//   }
+//   return displayName;  // return the lexical scope 
+// }
+
+// const myFunc = makeFunc();
+// myFunc();
+
+</script>
+
+<script>
+// real life eaxmple to understand closure 
+// this is not optimize 
+
+// document.querySelector('#red').onclick = function() {
+//     document.body.style.backgroundColor = `red`
+// }
+// document.querySelector('#black').onclick = function() {
+//     document.body.style.backgroundColor = `black`
+// }
+
+
+
+
+// function clickHandler(color) {
+//     // document.body.style.backgroundColor = `${color}`
+//     return function() {
+//          document.body.style.backgroundColor = `${color}`
+//     }
+// }
+
+// document.getElementById('red').onclick = clickHandler('red')
+// document.getElementById('black').onclick = clickHandler('black')
+
+
+// another way without help of closure
+function clickHandler(color) {
+    document.body.style.backgroundColor = `${color}`
+   
+}
+
+document.getElementById('red').onclick = function() {  // here using of anonymous function
+    clickHandler('red')
+} 
+document.getElementById('black').onclick = function() {
+    clickHandler('black')
+} 
+</script>
+</body>
+</html>

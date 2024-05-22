@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Click Button</button>
+
+
+<script>
+
+class React {
+    constructor(library, server) {
+        this.library = 'React'
+        this.server = 'https://localhost:300'
+
+         // Requirement: Add an event listener to a button
+        document.querySelector('button')
+        . addEventListener('click', this.handleClick.bind(this)) // use of bind we can access all the properties inside the class
+    }
+    
+    handleClick() {
+        // This method is bound to the instance of the class using bind(this).
+        // This function is called when the button is clicked
+         // return `button is clicked ${this.server}` // try but not able to do but see the result in the chatpgt
+        console.log('button is clicked');
+        console.log(this.server);  
+       
+    
+}
+}
+
+const app = new React()
+
+</script>
+</body>
+</html>

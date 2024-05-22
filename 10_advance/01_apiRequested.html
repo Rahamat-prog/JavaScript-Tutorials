@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api requsted</title>
+</head>
+<body style="background-color: #212121;">
+    <!-- XMLHttpRequest (XHR) objects are used to interact with servers. You can retrieve 
+        data from a URL without having to do a full page refresh. This enables a Web page 
+        to update just part of a page without disrupting what the user is doing. -->
+
+ <!-- readyState: This property of the XMLHttpRequest object holds the status of the request. 
+    It can take one of the following values: -->
+<!-- 0 UNSENT	Client has been created. open() not called yet.
+     1	OPENED	open() has been called.
+     2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+     3	LOADING	Downloading; responseText holds partial data.
+     4	DONE	The operation is complete. -->
+
+
+<script>
+    const requestUrl = 'https://api.github.com/users/hiteshchoudhary' // This is the URL to which the HTTP GET request will be sent.
+    const xhr = new XMLHttpRequest() // XMLHttpRequest is used to create an HTTP request.
+    console.log(xhr.readyState); // This should log 0 (UNSENT).
+    xhr.open('GET', requestUrl) // The open method initializes the request
+    console.log(xhr.readyState); //  This should log 1 (OPENED).
+    // xhr.onreadystatechange is an event handler that is called whenever the readyState of the XMLHttpRequest changes.
+    xhr.onreadystatechange = function() { // The onreadystatechange event handler processes the response once the request completes.
+        console.log(xhr.readyState); //  logs the current readyState to the console.
+        if (xhr.readyState === 4) { 
+            console.log(this.responseText); // Assuming the request is successful and the GitHub API returns the user data, the console.log(this.responseText); line will output the raw JSON response
+            const data = JSON.parse(this.responseText) // JSON.parse converts the string into a JavaScript object for easier data manipulation.
+            console.log(typeof data); // object
+            console.log(`the followers is :  ${data.followers}`);
+       }
+    }
+
+    xhr.send() // Finally, the send method sends the request to the server.
+</script>
+</body>
+</html>
+
+
+<!-- behind the sence -->
+<!-- When the XMLHttpRequest object is created and the request is opened using xhr.open(),
+its readyState changes from 0 (UNSENT) to 1 (OPENED).
+When the request is sent using xhr.send(), the readyState changes from 1 (OPENED) to 2 (HEADERS_RECEIVED)
+when the server has received the request and headers are available.
+While the response is being received, the readyState changes from 2 (HEADERS_RECEIVED) to 3 (LOADING).
+When the response is fully received and the request is complete, the readyState changes from 3 (LOADING) to 4 (DONE). -->
