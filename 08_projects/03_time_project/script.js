@@ -9,3 +9,7 @@ setInterval( () => {   // setInterval is a easyest method controll by javascript
     // console.log(date);
     clock.innerHTML = date.toLocaleTimeString()
 }, 1000 )
+
+
+
+

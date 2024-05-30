@@ -1,0 +1,45 @@
+* {
+    /* padding: 0; */
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button {
+    padding: 20px;
+}
+#btn2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    
+}
+.container {
+    width: 400px;
+    height: 300px;
+    background:#e4edee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.btn-container {
+    display: flex;
+    gap: 15px;
+    /* margin-top: 4rem; */
+}
+
+
+.heading {
+    position: absolute;
+    margin-bottom: 15rem;
+}

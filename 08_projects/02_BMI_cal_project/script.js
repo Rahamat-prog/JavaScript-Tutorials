@@ -17,7 +17,7 @@ form.addEventListener('submit', ( (e) => {
     }
 
     else {
-        const BMI = (weight / ((height * height) / 10000) ).toFixed(2)
+        const BMI = (weight / ((height * height) / 10000)).toFixed(2)
         if (BMI < 18.6) {
             result.innerHTML = `your BMI ${BMI} (Under Weight)`
         }

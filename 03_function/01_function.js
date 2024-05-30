@@ -73,3 +73,23 @@
 // console.log(add(2, 3));       // Output: 5
 // console.log(multiply(4, 5));  // Output: 20
 // console.log(subtract(9, 6));  // Output: 3
+
+
+// immediately invoked function in javascript
+(function invoked() {
+    console.log("immediately log ");
+})()
+
+// object on function ahi khas bad h javascript ka 
+function emp(id, name , salary) {
+    this.id = id
+    this.name = name
+    this.salary = salary
+}
+
+
+const e = new emp('123', "hitesh", "13100")
+console.log(e);
+delete e.id  // ha ha 
+console.log(e);
+

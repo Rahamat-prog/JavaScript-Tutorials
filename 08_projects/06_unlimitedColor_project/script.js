@@ -16,7 +16,7 @@ const startChangingColor = function() {
 }
     if (!intervalId) {
         intervalId =  setInterval(changeBgColor, 1000)
-        console.log("start");
+        // console.log("start");
     }
 
 }
@@ -24,7 +24,7 @@ const startChangingColor = function() {
 const stopChangingColor = function() {
     if (intervalId) {
         clearInterval(intervalId)
-        console.log("stoped");
+        // console.log("stoped");
         intervalId = null
     }
   

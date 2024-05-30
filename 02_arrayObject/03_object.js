@@ -62,4 +62,5 @@ jsUser.Email = "rahamat@000"
 // console.log(jsUser.greetingTwo());
 
 
-
+// seal meathod - > only oyu can  update 
+// freeze method -> not able to do delete push and update 

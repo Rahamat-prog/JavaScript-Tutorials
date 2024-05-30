@@ -9,8 +9,8 @@ const startOver = document.querySelector('.resultParas');
 
 const p = document.createElement('p');
 
-let prevGess = []
-let numGuess = 1
+// let prevGess = []
+let numGuess = 0
 let playGame = true
 
 if (playGame) {
@@ -28,8 +28,9 @@ function validateGuess(guess) {
     } else if(guess < 1 || guess >  100  ){
         alert(`please enter number between 1 to 100`)
     } else {
-        prevGess.push(guess)
-        if (numGuess === 10) {
+        // prevGess.push(guess)
+        guessSlot.innerHTML += `${guess},`
+        if (numGuess === 6) {
             displayGuess(guess)
             displayMessage(`Game over. Random number was ${randomNumber}`)
             endGame()
@@ -42,20 +43,22 @@ function validateGuess(guess) {
 }
 
 function checkGuess(guess) {
-    if (guess === randomNumber) {
-        displayMessage(`congrats, your guess is right `)
-    } else if(guess > randomNumber) {
+    if (guess > randomNumber) {
         displayMessage(`the number is too big`)
     } else if(guess < randomNumber) {
-        displayMessage(`the number is too low `)
+        displayMessage(`the number is too low`)
+    }else {
+        displayMessage(`Congrats, your guess is right`)
+        endGame()
     }
 }
 
 function displayGuess(guess) {
     userInput.value = ''
-    guessSlot.innerHTML += `${guess},`
+    // guessSlot.innerHTML += `${guess},`
     numGuess++
-    remaining.innerHTML = `${11 - numGuess }`
+    console.log(numGuess);
+    remaining.innerHTML = `${7 - numGuess }`
 }
 
 function displayMessage(message) {
@@ -76,10 +79,10 @@ function newGame() {
     const newGameButton = document.querySelector('.button')
     newGameButton.addEventListener('click', function(e) {
         randomNumber = parseInt(Math.random() * 100 + 1)
-        prevGess = []
-        numGuess = 1
+        // prevGess = []
+        numGuess = 0
         guessSlot.innerHTML = ''
-        remaining.innerHTML = `${11 - numGuess}` 
+        remaining.innerHTML = `${7 - numGuess }`
         userInput.removeAttribute('disabled')
         startOver.removeChild(p)
         lowOrHi.innerHTML = ''
