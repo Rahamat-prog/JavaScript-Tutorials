@@ -1,5 +1,4 @@
 // Classes are a template for creating objects. They encapsulate data with code to work on that data. Classes in JS are built on prototypes
-
 // A class element can be characterized by three aspects:
 
 // Kind: Getter, setter, method, or field
@@ -47,3 +46,6 @@ console.log(chai instanceof user);  // true
 // const chaiMasala = new user('rahamat', 'rahamat@gmail.com', '123')
 // console.log(chaiMasala.encriptedPassword());
 // console.log(chaiMasala.changeUsername());
+
+
+// *** when we use constructor function arrow function is not applicable 

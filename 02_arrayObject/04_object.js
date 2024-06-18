@@ -68,7 +68,7 @@ const   users = [
 
 
 
-//  De structure 
+//  Destructure 
 
 const course = {
     coursename: "js in hindi",
