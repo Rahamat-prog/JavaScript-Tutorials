@@ -35,7 +35,7 @@
 // console.log(multipleFruits[99]);  // undefined
 
 
-// Find the index of an item in an arra
+// Find the index of an item in an array
 // const randomFruits = ["Apple", "Banana", "Apple", "Mango"]
 // console.log(randomFruits.indexOf("Banana")); // 1
 

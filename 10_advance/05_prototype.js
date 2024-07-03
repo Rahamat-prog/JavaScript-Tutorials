@@ -11,70 +11,72 @@ The new object is returned: After the constructor function has been called, if i
 
 */
 
-// function muitipleBy5(num) {
-//     return num * 5
-// }
-// muitipleBy5.power = 2
+function muitipleBy5(num) {
+    return num * 5
+}
+muitipleBy5.power = 2
 
-// console.log(muitipleBy5(5)); 25
-// console.log(muitipleBy5.power); // 2 
-// console.log(muitipleBy5.prototype);  // {}
-
-
-
-// function createUser(username, score){
-//     this.username = username;
-//     this.score = score
-// }
-
-// createUser.prototype.increment = function(){
-//     this.score++
-//     console.log(`the new score is ${this.score}`);
-
-// }
-// createUser.prototype.printMe = function(){
-//     console.log(`price is ${this.score} of the ${this.username}`);
-// }
-
-// const chai = new createUser("chai", 25)
-// const tea = new createUser("tea", 250)
-
-// chai.printMe()  // price is 25 of the chai
-// tea.increment()
+console.log(muitipleBy5(5)); 25
+console.log(muitipleBy5.power); // 2 
+console.log(muitipleBy5.prototype);  // {}
 
 
 
+function createUser(username, score){
+    this.username = username;
+    this.score = score
+}
 
-// let myName = 'Hitesh   '
-// console.log(myName.truelength);  // undefined
+createUser.prototype.increment = function(){
+    this.score++
+    console.log(`the new score is ${this.score}`);
+
+}
+createUser.prototype.printMe = function(){
+    console.log(`price is ${this.score} of the ${this.username}`);
+}
 
 
-// let myHeroArray = ['Thar', 'SpiterMan']
-// let myHeroObject = {
-//     thor: "hammer",
-//     spiderman: "sling",
+const chai = new createUser("chai", 25)
+const tea = new createUser("tea", 250)
 
-//     getSpiderPower : function() {
-//         console.log(`Spider man power is ${this.spiderman}`);
-//     }
+chai.printMe()  // price is 25 of the chai
+tea.increment()
 
-// }
 
-// Object.prototype.hitesh  = function() {
-//     console.log(`Hitesh is present all object `);
-// }
 
-// Array.prototype.heyHitesh  = function() {
-//     console.log(`Hitesh says hello`);
-// }
+let myName = 'Hitesh   '
+console.log(myName.truelength);  // undefined
 
-// myHeroObject.hitesh() 
-// myHeroArray.hitesh()  // this array can access the hitesh method through object.
-// myHeroArray.heyHitesh()  
-// myHeroObject.heyHitesh()  // this object can't access heyHitesh method
+
+let myHeroArray = ['Thar', 'SpiterMan']
+let myHeroObject = {
+    thor: "hammer",
+    spiderman: "sling",
+
+    getSpiderPower : function() {
+        console.log(`Spider man power is ${this.spiderman}`);
+    }
+
+}
+
+Object.prototype.hiteshObj  = function() {
+    console.log(`Hitesh is present all object `);
+}
+
+Array.prototype.HiteshArry  = function() {
+    console.log(`Hitesh says hello`);
+}
+
+myHeroObject.hiteshObj() 
+myHeroArray.hiteshObj()  // this array can access the hitesh method through object.
+myHeroArray.HiteshArry()  
+myHeroObject.HiteshArry()  // this object can't access heyHitesh method
+
 
 
 // defines several JavaScript objects using object literals and prototype inheritance.
+
 const User = {
     name: "chai",
     email: "chai@google.com"
@@ -102,16 +104,16 @@ Object.setPrototypeOf(TeachingSupport, Teacher) //TeachingSupport will inherit p
 
 
 // String object in JavaScript by adding a custom method trueLength() to its prototype
-// let anotherUsername = "ChaiAurCode     "
-// console.log(anotherUsername.length); // 16 
+let anotherUsername = "ChaiAurCode     "
+console.log(anotherUsername.length); // 16 
 
-// String.prototype.trueLength = function(){
-//     console.log(`${this}`);
-//     console.log(`True length is: ${this.trim().length}`);
-// }
+String.prototype.trueLength = function(){
+    console.log(`${this}`);
+    console.log(`True length is: ${this.trim().length}`);
+}
 
-// anotherUsername.trueLength() // True length is: 11
-// "hitesh".trueLength() //hitesh True length is: 6
-// "iceTea".trueLength() // iceTea True length is: 6
+anotherUsername.trueLength() // True length is: 11
+"hitesh".trueLength() //hitesh True length is: 6
+"iceTea".trueLength() // iceTea True length is: 6
 
 

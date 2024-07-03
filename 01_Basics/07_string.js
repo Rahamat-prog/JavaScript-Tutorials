@@ -64,9 +64,10 @@ const words = str.split(" ")  //The split method splits the string at each space
 // console.log(chars[3]); // m 
 
 
-// const text = "How are you doing today?";
+const text = "How are you doing today?";
 // Limit the Splits
-// const myArray = text.split(" ", 3); // The limit 3: This specifies the maximum number of splits to be performed. The resulting array will contain at most 3 elements.
+const myArray = text.split(" ", 3); // The limit 3: This specifies the maximum number of splits to be performed. The resulting array will contain at most 3 elements.
+console.log(myArray);
 
 
 

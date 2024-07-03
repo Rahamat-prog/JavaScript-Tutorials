@@ -7,21 +7,26 @@
 </head>
 <body>
     <h1>Chai aur Code</h1>
-    <button id="stop">Stop</button>
+    <button id="stop">Stop me</button>
 
 
     <script>
+        // The setTimeout method is used to execute a function after a specified delay (in milliseconds). It runs the function once after the delay has elapsed.
+        
         // here print the name after 2 s
-        //  setTimeout(function() {
-        //     console.log("Hitesh");
-        // }, 2000) // in milliseconds (2000 milliseconds = 2 seconds).
+//         const result =  setTimeout(function() {
+//             console.log("Hitesh");
+//         }, 2000) // in milliseconds (2000 milliseconds = 2 seconds).
 
+//        document.querySelector('#stop').addEventListener('click', () => {
+//        clearTimeout(result)
+// })
 
         //  another way 
-    //    const sayHitesh =  function(){
-    //         console.log("hitesh");
-    //     }
-    //     setTimeout(sayHitesh, 2000)
+       const sayHitesh =  function(){
+            console.log("hitesh");
+        }
+        setTimeout(sayHitesh, 2000)
 
 
     

@@ -7,12 +7,12 @@
 </head>
 <body>
     <h1>Lets learn Lexical scoping and Closure</h1>
-    <button id="red">Click Button</button>
-    <button  id="black">Click Button</button>
+    <button id="red">Click Button Red</button>
+    <button  id="black">Click Button Black</button>
 
     <script>
 
-        // function outter()  {
+        // function outter()  {   
         //     let name = 'Rahamat'
         //    function inner() {
         //     console.log(name); // here we can access the name variable -> this is called lexical scope.
@@ -20,7 +20,7 @@
         //    inner()
         // }
         // outter();
-        // console.log(name); // we can't access 
+        // console.log(name); // we can't access.
 
 
 // a closure gives you access to an outer function's scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
@@ -52,10 +52,8 @@
 // }
 
 
-
-
+// this is optimize 
 // function clickHandler(color) {
-//     // document.body.style.backgroundColor = `${color}`
 //     return function() {
 //          document.body.style.backgroundColor = `${color}`
 //     }
@@ -63,6 +61,7 @@
 
 // document.getElementById('red').onclick = clickHandler('red')
 // document.getElementById('black').onclick = clickHandler('black')
+
 
 
 // another way without help of closure

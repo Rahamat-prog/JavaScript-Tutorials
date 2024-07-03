@@ -8,7 +8,7 @@
 const mySimbol = Symbol("key1") // key1 is a description
 
 const obj = {
-    [mySymbol]: "value1",
+    [mySimbol]: "value1",
     prop1: "value2"
 };
 
@@ -18,6 +18,7 @@ for (let key in obj) {
 
 console.log(Object.keys(obj));  // Output: ["prop1"]
 console.log(Object.getOwnPropertySymbols(obj));  // Output: [ Symbol(key1) ]
+// console.log(obj);
 
 
 

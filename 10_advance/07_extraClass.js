@@ -1,4 +1,4 @@
-// // har ak real life entites ko object ke form mai represent kiya jata h aur iska common blueprint ko class ke form mai represent kiya jata h
+//har ak real life entites ko object ke form mai represent kiya jata h aur iska common blueprint ko class ke form mai represent kiya jata h
 
 class product {
     // properties -> variables -> data member 

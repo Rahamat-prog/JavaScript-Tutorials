@@ -69,8 +69,8 @@
 
 // // The error occurs in this case because addtwo is defined as a function expression assigned to a variable (storeFunction). Unlike function declarations, function expressions are not hoisted in the same way.
 // Only the variable storeFunction is hoisted to the top of its scope, but not the 
-
 // function definition.
+
 // addtwo(5)
 
 //  const  storeFunction = function addtwo(num1) {

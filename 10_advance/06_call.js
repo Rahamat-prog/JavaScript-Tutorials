@@ -3,6 +3,7 @@ function setUserName(userName) {
     // complex DB call
     this.userName = userName
     console.log("called"); 
+    console.log(userName);
 }
 
 

@@ -14,7 +14,7 @@ const flatArray = interstingArray.flat(Infinity) // flat in one array
 // check array or not 
 
 // console.log(Array.isArray("Rahamat")); // false 
-// console.log(Array.from("Hitesh")); //[ 'H', 'i', 't', 'e', 's', 'h' ] |  static method creates a new, shallow-copied
+// console.log(Array.from("Hitesh")); //[ 'H', 'i', 't', 'e', 's', 'h' ]|static method creates a new, shallow-copied
 // console.log(Array.from([1, 2, 3], (x) => x + x )); // 2, 4, 6
 
 // convert variable to array 

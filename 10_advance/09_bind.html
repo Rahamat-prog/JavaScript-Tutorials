@@ -10,6 +10,7 @@
 
 
 <script>
+ const button = document.querySelector('button')
 
 class React {
     constructor(library, server) {
@@ -17,23 +18,16 @@ class React {
         this.server = 'https://localhost:300'
 
          // Requirement: Add an event listener to a button
-        document.querySelector('button')
-        . addEventListener('click', this.handleClick.bind(this)) // use of bind we can access all the properties inside the class
+        button.addEventListener('click', this.handleClick.bind(this)) 
     }
-    
     handleClick() {
-        // This method is bound to the instance of the class using bind(this).
-        // This function is called when the button is clicked
-         // return `button is clicked ${this.server}` // try but not able to do but see the result in the chatpgt
-        console.log('button is clicked');
-        console.log(this.server);  
-       
-    
+        console.log('button is clicked', this.library);
+        console.log(this.server); 
 }
 }
-
 const app = new React()
 
+//Preserving this Context: When passing a method as a callback, the original this context might be lost. Using bind ensures the correct this context is preserved.
 </script>
 </body>
 </html>

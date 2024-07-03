@@ -22,7 +22,7 @@ function addTwoNuber(number1, number2) {   // not right way
 addTwoNuber(2, 4)
 
 
-function addTwoNuber(number1, number2){   // another way 
+function addTwoNuber(number1, number2){   // another way
     console.log("hitesh");
     let result = number1 + number2
     return result

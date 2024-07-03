@@ -1,17 +1,17 @@
 // loop : - Loops offer a quick and easy way to do something repeatedly.
 // There are many different kinds of loops, but they all essentially do the same thing: they repeat an action some number of times.
 
-// for (let i = 0; i < 10; i++) {
-//    const  element = i
+for (let i = 0; i < 10; i++) {
+   const  element = i
 
-//    if (element === 5) {
-//         console.log("5 is the best number ");
+   if (element === 5) {
+        console.log("5 is the best number ");
     
-//    }
+   }
 
-//     console.log(element);
+    console.log(element);
     
-// }
+}
 
 // 1 to 10 number table print
 // for (let i = 1; i <= 10; i++) {
@@ -46,14 +46,14 @@
 // }
 
 
-// for (let i = 1; i < 10; i++) {
-//     if (i === 5) {
-//         console.log(`Detected 5 `);
-//         continue
-//     }
-//     console.log(i);
+for (let i = 1; i < 10; i++) {
+    if (i === 5) {
+        console.log(`Detected 5 `);
+        continue
+    }
+    console.log(i);
     
-// }
+}
 
 
 // Summary of Use Cases:
@@ -62,3 +62,4 @@
 // do...while loop: Use when you need to ensure that the loop body is executed at least once.
 // for...in loop: Use for iterating over the properties of an object (not recommended for arrays).
 // for...of loop: Use for iterating over the values of an iterable object (arrays, strings, maps, sets, etc.).
+// forEach loop: Use for iterating over arrays, executing a provided function once for each array element.

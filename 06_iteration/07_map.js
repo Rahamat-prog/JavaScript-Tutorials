@@ -2,16 +2,16 @@
 
 //The map method in JavaScript is used to create a new array by applying a transformation function to each element of an existing array
 
-// const myNumers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const myNumers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-// let newNumbers = myNumers.map( (num) => { // here we use backet its means return key 
-//     return (num * 10) + 1
+let newNumbers = myNumers.map( (num) => {  // here we use backet its means return key 
+    return (num * 10) + 1
     
-// } ).filter( (num) => {
-//     return num >= 40 
-// } )
+} ).filter( (num) => {
+    return num >= 40 
+} )
 
-// console.log(newNumbers);
+console.log(newNumbers); //[ 41, 51,  61, 71,  81, 91, 101]
 
 
 // const myNumers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]

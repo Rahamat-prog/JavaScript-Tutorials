@@ -4,7 +4,7 @@
 
 (function chai() {
     console.log(`DB Connected`);
-}) ();  // semiclone is must for the write two invoked function 
+}) ();  // semiclone is must for the write to invoked function 
 
 
 //  this is arrow invoked function 

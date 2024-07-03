@@ -7,16 +7,16 @@
 // }
 
 
-// let myArray = ["flash", "Bathman", "SuperHero"]
+let myArray = ["flash", "Bathman", "SuperHero"]
 
-// let arr = 0
+let arr = 0
 
-// while (arr < myArray.length) {
-//     console.log(`the value is ${myArray[arr]}`); //
-//     console.log(`the value is ${arr}`); //
+while (arr < myArray.length) {
+    console.log(`the value is ${myArray[arr]}`); //
+    console.log(`the value is ${arr}`); //
 
-//     arr = arr + 1
-// }
+    arr = arr + 1
+}
 
 
 

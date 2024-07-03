@@ -22,6 +22,7 @@ function callbachFunction(name) {
 
 function higherOrder(name, func) {
     func(name)
+    console.log("mai ap ke piche hu ");
 }
 
 higherOrder("javascript", callbachFunction)
@@ -40,7 +41,7 @@ const area = function(radius) {
 
 // logic for find out diameter of circle 
 const diameter = function(radius) {
-    return  2 * radius * radius 
+    return  2 * radius
     // return storeDiameter
 }
 
@@ -55,6 +56,6 @@ const  calculate = function(radius, logic) {
 }
 
 console.log(calculate(radius, area)) // [ 3.141592653589793, 12.566370614359172, 28.274333882308138 ]
-console.log(calculate (radius, diameter)) // [ 2, 8, 18 ]
+console.log(calculate (radius, diameter)) //[ 2, 4, 6 ]
 
 

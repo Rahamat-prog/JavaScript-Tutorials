@@ -3,7 +3,7 @@ const user = {
     _email : 'rahamat123@gmail.com',
 
     set email(value) {
-        this._password = value
+        this. _email = value
     },
     get email() {
         return `Email is ${this._email.toUpperCase()}`

@@ -12,24 +12,24 @@
 </body>
 
 <script>
-    function addLanguage(langName) {
-       const li =  document.createElement('li')
-       li.innerHTML = `${langName}`
-       document.querySelector('.language').appendChild(li)
-    }
+    // function addLanguage(langName) {
+    //    const li =  document.createElement('li')
+    //    li.innerHTML = `${langName}`
+    //    document.querySelector('.language').appendChild(li)
+    // }
 
-    addLanguage("Python")
-    addLanguage("C++")
+    // addLanguage("Python")
+    // addLanguage("C++")
    
 
     // optimize way 
-    // function addOptiLanguage(langName) {
-    //     const li = document.createElement('li')
-    //     li.appendChild(document.createTextNode(langName))
-    //     document.querySelector('.language').appendChild(li)
-    // }
+    function addOptiLanguage(langName) {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
 
-    // addOptiLanguage("Ruby")
+    addOptiLanguage("Ruby")
 
 
     // edit 

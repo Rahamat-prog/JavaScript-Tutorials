@@ -1,11 +1,11 @@
 // Math.PI is a property of the Math object that represents the mathematical constant π (pi), which is approximately equal to 3.141592653589793.
 
-console.log(Math.PI);   // 3.141592653589793
+// console.log(Math.PI);   // 3.141592653589793
 // Math.PI = 5;
 // console.log(Math.PI); // error we can't change the value
 
-const descripter = Object.getOwnPropertyDescriptor(Math, 'PI') 
-console.log(descripter); // value: 3.141592653589793,
+// const descripter = Object.getOwnPropertyDescriptor(Math, 'PI') 
+// console.log(descripter); // value: 3.141592653589793,
 // writable: false,
 // enumerable: false,
 // configurable: false
@@ -36,8 +36,8 @@ console.log(Object.getOwnPropertyDescriptor(chai, 'price'));
 for (let [key, value] of Object.entries(chai)) {  // useing of entries itrate the object 
     if (typeof value !== 'function') {
         console.log(`${key} : ${value}`); // ->   //name : ginger chai
-                                                // isAvailable : true
-                                               // price not print cause of enumerable: false set
+                                                 // isAvailable : true
+                                                 // price not print cause of enumerable:  false set
 
     }
 }

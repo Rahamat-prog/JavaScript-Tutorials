@@ -22,14 +22,14 @@
 <script>
     const requestUrl = 'https://api.github.com/users/hiteshchoudhary' // This is the URL to which the HTTP GET request will be sent.
     const xhr = new XMLHttpRequest() // XMLHttpRequest is used to create an HTTP request.
-    console.log(xhr.readyState); // This should log 0 (UNSENT).
+    // console.log(xhr.readyState); // This should log 0 (UNSENT).
     xhr.open('GET', requestUrl) // The open method initializes the request
     console.log(xhr.readyState); //  This should log 1 (OPENED).
     // xhr.onreadystatechange is an event handler that is called whenever the readyState of the XMLHttpRequest changes.
     xhr.onreadystatechange = function() { // The onreadystatechange event handler processes the response once the request completes.
         console.log(xhr.readyState); //  logs the current readyState to the console.
         if (xhr.readyState === 4) { 
-            console.log(this.responseText); // Assuming the request is successful and the GitHub API returns the user data, the console.log(this.responseText); line will output the raw JSON response
+            // console.log(this.responseText); // Assuming the request is successful and the GitHub API returns the user data, the console.log(this.responseText); line will output the raw JSON response
             const data = JSON.parse(this.responseText) // JSON.parse converts the string into a JavaScript object for easier data manipulation.
             console.log(typeof data); // object
             console.log(`the followers is :  ${data.followers}`);

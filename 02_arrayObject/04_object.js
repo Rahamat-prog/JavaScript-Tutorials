@@ -43,7 +43,7 @@ const anotherWayAddObject = Object.assign({}, obj1, obj2) // another way to marg
 // console.log(anotherWayAddObject);
 
 
-const   users = [
+const  users = [
     {
         id: 1,
         email: "h@gmail1.com"

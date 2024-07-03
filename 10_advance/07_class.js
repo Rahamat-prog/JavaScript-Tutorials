@@ -30,22 +30,22 @@ console.log(chai instanceof user);  // true
 
 
 // behind the scenc
-// function user(username,email, password) {
-//     this.username = username;
-//     this.email = email;
-//     this.password = password
-// }
+function user(username,email, password) {
+    this.username = username;
+    this.email = email;
+    this.password = password
+}
 
-// user.prototype.encriptedPassword = function() {
-//     return `Encrpted password is ${this.password}abc`
-// }
-// user.prototype.changeUsername = function(){
-//     return `${this.username.toUpperCase()}`
-// }
+user.prototype.encriptedPassword = function() {
+    return `Encrpted password is ${this.password}abc`
+}
+user.prototype.changeUsername = function(){
+    return `${this.username.toUpperCase()}`
+}
 
-// const chaiMasala = new user('rahamat', 'rahamat@gmail.com', '123')
-// console.log(chaiMasala.encriptedPassword());
-// console.log(chaiMasala.changeUsername());
+const chaiMasala = new user('rahamat', 'rahamat@gmail.com', '123')
+console.log(chaiMasala.encriptedPassword());
+console.log(chaiMasala.changeUsername());
 
 
 // *** when we use constructor function arrow function is not applicable 

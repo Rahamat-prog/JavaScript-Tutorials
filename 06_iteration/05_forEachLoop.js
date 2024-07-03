@@ -1,5 +1,5 @@
 //  for each loop mostly use 
-//Use forEach loop when you need to iterate over array elements 
+//Use forEach loop when you need to iterate over an array elements. 
 // and execute a callback function for each element, without creating a new array.
 // It provides a cleaner and more concise syntax compared to traditional for loops,
 
@@ -12,11 +12,11 @@
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
 // coding.forEach( function(val) {   // there is no function name cause its callback 
-//     console.log(val);
+//     console.log(val); // js ...
 // } )
 
 
-// coding.forEach((item,) => {   // use for each loop in arrow function with backet 
+// coding.forEach((item) => {   // use for each loop in arrow function with backet 
 //     console.log(item);
 // } )
 
@@ -38,6 +38,7 @@ const coding = ["js", "ruby", "java", "python", "cpp"]
 
 // coding.forEach( (item, index, arr) => { // we can pass multiple paramiter inside for each loop
 //     console.log(index, item);
+//     console.log(arr);
 // })
 
 
@@ -57,7 +58,11 @@ const coding = ["js", "ruby", "java", "python", "cpp"]
 // ]
 
 // myCoding.forEach((item) => {
-//     console.log(item.languageName);     // here we can return particular value from inside Array then object, using for each loop
+//     console.log(item.languageName); // here we can return particular value from inside Array then object, using for each loop
+//     if (item.languageName === 'python') {
+//         console.log(item.languageName);
+//         console.log(item.languageFileName);
+//     }
 // } )
 
 

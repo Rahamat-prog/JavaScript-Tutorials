@@ -14,11 +14,13 @@
     <script>
         // The term "current timestamp" typically refers to the current time and date expressed as the number of milliseconds since the Unix epoch (midnight on January 1, 1970, UTC). In JavaScript, this is obtained using the Date.now()
 
-    //    const sayDate = ( (str) => {
-    //     console.log(str, Date.now(), ); 
-    //    } ) 
+        // The setInterval method is used to repeatedly execute a function with a fixed time delay between each call. It continues to run the function at specified intervals until it is stopped using. 
+
+       const sayDate = ( (str) => {
+        console.log(str, Date.now(), ); 
+       } ) 
            
-    //     setInterval(sayDate, 2000, 'Hi' ) 
+        setInterval(sayDate, 2000, 'Hi' ) 
 
            
 // The toLocaleString method converts the Date object to a string using the default locale and time zone, resulting in a human-readable date and time format.
@@ -26,11 +28,11 @@
     //     const sayDate = ( (str) => {
     //     const currentDate = new Date()
     //     const formattedDate = currentDate.toLocaleString() // 
-    //     console.log(str, formattedDate, ); .
+    //     console.log(str, formattedDate, ); 
     //    } ) 
            
     //     setInterval(sayDate, 2000, 'Hi' ) 
-
+    
 
     // here we can click on start button so start and click on the stop button so stop.
     
@@ -51,14 +53,15 @@
 
         //  interval = setInterval(sayDate, 2000, 'Hi' ) // before click on the start button code will run on the console. because of here call the function globally and set interval method run in infinity.
 
-        //  document.querySelector('#start').addEventListener('click', ( ()=> {
-        //     if (!interval) {
-        //         interval = setInterval(sayDate, 2000, 'Hi' )
-        //         console.log("start");
+         document.querySelector('#start').addEventListener('click', ( ()=> {
+            if (!interval) {
+                interval = setInterval(sayDate, 2000, 'Hi' )
+                console.log("start");
+              
                
-        //     }
+            }
            
-        //  } ))
+         } ))
           
     </script>
 </body>

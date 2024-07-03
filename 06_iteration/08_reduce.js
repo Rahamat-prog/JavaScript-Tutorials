@@ -1,7 +1,7 @@
 // reduce pactice
 // reduce : The reduce method in JavaScript is used to reduce an array to a single value. It iterates over each element of the array and accumulates a result by applying a callback function that you provide.
 
-const myNums = [1, 2, 3, 4]
+// const myNums = [1, 2, 3, 4]
 
 // const totalNums = myNums.reduce( function(accumulator, currectValue) {
 //     console.log(`acc: ${accumulator} and curr: ${currectValue}`);
@@ -9,6 +9,7 @@ const myNums = [1, 2, 3, 4]
 // }, 0)
 
 // console.log(totalNums);
+
 
 // understand the above example 
 // The callback function provided to reduce has two parameters:

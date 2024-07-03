@@ -1,7 +1,7 @@
-// DOM practice on browser --> Below are some operations in DOM
+// DOM practice on browser --> Below are some operations in DOm
 
-// document.getElementById('title')
-// <h1 class=​"heading" id=​"title">​DOM learning on chai or code​</h1>​
+//  document.getElementById('title')
+//  <h1 class=​"heading" id=​"title"> ​DOM learning on chai or code​</h1>​ 
 
 // document.getElementById('title').id
 // 'title'

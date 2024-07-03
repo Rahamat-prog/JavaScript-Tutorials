@@ -1,9 +1,9 @@
 const userEmail = []
 
-// if (userEmail) {
-//     console.log("Got user email");
+if (userEmail) {
+    console.log("Got user email");
 
-// }else console.log("don't get user email ");
+}else console.log("don't get user email ");
 
 // falsy values 
 //  false, 0, -0, BigInt 0n, "", null, undefined, NaN
@@ -13,17 +13,17 @@ const userEmail = []
 
 //  prove this is empty array
 
-// if (userEmail.length === 0) {
-//     console.log("Array is empty ");
-// }
+if (userEmail.length === 0) {
+    console.log("Array is empty ");
+}
 
 // prove object is empty 
 
-// const myObj = {}
+const myObj = {}
 
-// if(Object.keys(myObj).length === 0) {
-//     console.log("Empyt object ");
-// }
+if(Object.keys(myObj).length === 0) {   
+    console.log("Empyt object ");
+}
 
 
 // Nullish Coalescing Operator (??): null undefined

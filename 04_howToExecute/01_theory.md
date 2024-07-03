@@ -1,13 +1,13 @@
 # Global execution 
 1. Memory creation 
- 2. Execution phase 
+2. Execution phase 
 
 // The global execution process in JavaScript involves two main phases: memory creation and execution.
 // During the memory creation phase, memory is allocated for variables, functions, and the lexical environment.
 // During the execution phase, JavaScript executes the code line by line, performing assignments, function calls, and other operations.
 
 //  insite memory creation variable store firs time take - > undefined 
-//  for the every function at the line of function call its create again - > memory creation and execution phase 
+//  for the every function at the line of function call its create again - > memory creation and execution phase
 
 # JavaScript executes code sequentially from top to bottom.
 
